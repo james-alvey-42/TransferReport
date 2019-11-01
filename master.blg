@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: master.aux
+The style file: JHEP.bst
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: publications.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: bbn.aux
+A level-1 auxiliary file: cosmicrays.aux
+A level-1 auxiliary file: neutrinos.aux
+A level-1 auxiliary file: appendix.aux
+Reallocated field_info (elt_size=4) to 12470 items from 5000.
+Database file #1: biblio.bib
+Repeated entry---line 1118 of file biblio.bib
+ : @article{Alvey:2019jzx
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2819 of file biblio.bib
+ : @inproceedings{Battaglieri:2017aum
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2936 of file biblio.bib
+ : @article{Aprile:2018dbl
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3088 of file biblio.bib
+ : @article{Xu:2018efh
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "IceCube" isn't style-file defined
+--line 3653 of file biblio.bib
+Warning--entry type for "HAWC" isn't style-file defined
+--line 3794 of file biblio.bib
+Warning--empty booktitle in Essig:2013lka
+Warning--empty booktitle in Alexander:2016aln
+Warning--empty booktitle in Battaglieri:2017aum
+Warning--empty publisher in Raffelt:1996wa
+Warning--empty booktitle in Verde:2019ivm
+Warning--empty publisher in CRMC
+Warning--empty year in CRMC
+You've used 249 entries,
+            2269 wiz_defined-function locations,
+            2568 strings with 57261 characters,
+and the built_in function-call counts, 75540 in all, are:
+= -- 7700
+> -- 3333
+< -- 0
++ -- 966
+- -- 717
+* -- 6691
+:= -- 10719
+add.period$ -- 252
+call.type$ -- 249
+change.case$ -- 246
+chr.to.int$ -- 0
+cite$ -- 256
+duplicate$ -- 3938
+empty$ -- 6193
+format.name$ -- 717
+if$ -- 19836
+int.to.chr$ -- 0
+int.to.str$ -- 249
+missing$ -- 926
+newline$ -- 751
+num.names$ -- 249
+pop$ -- 520
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 3309
+stack$ -- 0
+substring$ -- 2325
+swap$ -- 2051
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 502
+width$ -- 252
+write$ -- 2585
+(There were 4 error messages)

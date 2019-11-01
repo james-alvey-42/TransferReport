@@ -1,0 +1,184 @@
+\usepackage[margin=1.2in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[protrusion=true]{microtype}
+\usepackage{breqn}
+\usepackage{slashed}
+\usepackage{breqn}
+\usepackage{setspace}
+\usepackage{framed}
+\usepackage{tikz}
+\usepackage{epigraph}
+\usepackage[document]{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{cases}
+\usepackage{multirow}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{tocloft}
+\addtolength{\cftchapnumwidth}{10pt}
+\addtolength{\cftsecindent}{10pt}
+\addtolength{\cftsecnumwidth}{0pt}
+\addtolength{\cftsubsecindent}{10pt}
+\addtolength{\cftsubsecnumwidth}{0pt}
+\renewcommand\cftchapafterpnum{\vskip3.5pt}
+\renewcommand\cftsecafterpnum{\vskip3.5pt}
+\renewcommand\cftsubsecafterpnum{\vskip3.5pt}
+
+\newcommand{\JA}[1]{{\bf \color{cyan}{[JA: #1]}}}
+\newcommand{\Abs}[1]{\left|#1\right|}
+\newcommand{\mO}{\mathcal{O}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\dagg}{^{\dagger}}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\upd}[1]{\mathrm{d}#1\,}
+\renewcommand\vec{\mathbf}
+\newcommand{\normord}[1]{\raisebox{0.5pt}{:}\,#1\,\raisebox{0.5pt}{:}}
+\newcommand{\pr}{^{\prime}}
+\newcommand{\nhat}{\hat{\bm{n}}}
+\newcommand{\hamilt}{\mathcal{H}}
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mW}{\mathcal{W}}
+\newcommand{\mN}{\mathcal{N}}
+\newcommand{\mD}{\mathcal{D}}
+\newcommand{\mS}{\mathcal{S}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mC}{\mathcal{C}}
+\newcommand{\mT}{\mathcal{T}}
+\newcommand{\mZ}{\mathcal{Z}}
+\newcommand{\mR}{\mathcal{R}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\lie}[1]{\mathcal{L}\left(#1\right)}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\SO}[1]{\textrm{SO}\left(#1\right)}
+\newcommand{\SU}[1]{\textrm{SU}\left(#1\right)}
+\newcommand{\Orth}[1]{\textrm{O}\left(#1\right)}
+\newcommand{\Uni}[1]{\textrm{U}\left(#1\right)}
+\newcommand{\paraskip}{\vspace{10pt}}
+\newcommand{\del}{\partial}
+\newcommand{\TeG}{\mathcal{T}_e(\mathscr{G})}
+\newcommand{\TpM}{\mathcal{T}_p(\mathcal{M})}
+\newcommand{\TpMs}{\mathcal{T}^{\star}_p(\mathcal{M})}
+\newcommand{\etamn}[1]{\eta#1{\mu \nu}}
+\newcommand{\group}{\mathscr{G}}
+\newcommand{\alge}{\mathfrak{g}}
+\newcommand{\twobytwo}[4]{\begin{pmatrix}#1&#2 \\ #3&#4 \end{pmatrix}}
+\newcommand{\thrbythr}[3]{\begin{pmatrix}#1 \\ #2 \\ #3\end{pmatrix}}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{pmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{pmatrix}
+        \fi
+}
+\newcommand{\tr}{\text{Tr}}
+
+\usepackage[inline]{enumitem}
+\renewcommand\labelitemi{\raisebox{0.25ex}{\tiny$\bullet$}}
+
+\usepackage{xcolor}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=magenta, citecolor=magenta, runcolor=black, menucolor=black, filecolor=black, anchorcolor=black, linkcolor=magenta}
+
+\usepackage{booktabs}
+
+\usepackage{caption}
+\captionsetup[figure]{labelsep=quad, labelfont=bf, width=\linewidth}
+
+\usepackage{graphicx}
+\graphicspath{{Figures/}}
+
+\usepackage[sort&compress, numbers]{natbib}
+\setlength{\bibsep}{1pt}
+\bibliographystyle{JHEP}
+\renewcommand{\bibname}{References}
+\newcommand{\eprint}[1]{\href{http://arxiv.org/abs/#1}{#1}}
+
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+
+\renewcommand\thechapter{\Roman{chapter}}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
+\renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
+\renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
+
+\renewcommand\epigraphflush{flushright}
+\renewcommand\epigraphsize{\normalsize}
+\setlength\epigraphwidth{0.7\textwidth}
+
+\definecolor{titlepagecolor}{cmyk}{0, 0, 0, 1}
+
+\DeclareFixedFont{\titlefont}{T1}{ppl}{b}{it}{0.25in}
+
+\makeatletter                       
+\def\printauthor{%                  
+    {\large \@author}}              
+\makeatother
+
+% The following code is borrowed from: https://tex.stackexchange.com/a/86310/10898
+
+\newcommand\titlepagedecoration{%
+\begin{tikzpicture}[remember picture,overlay,shorten >= -10pt]
+
+\coordinate (aux1) at ([yshift=-15pt]current page.north east);
+\coordinate (aux2) at ([yshift=-410pt]current page.north east);
+\coordinate (aux3) at ([xshift=-4.5cm]current page.north east);
+\coordinate (aux4) at ([yshift=-150pt]current page.north east);
+
+\begin{scope}[titlepagecolor!40,line width=12pt,rounded corners=12pt]
+\draw
+  (aux1) -- coordinate (a)
+  ++(225:5) --
+  ++(-45:5.1) coordinate (b);
+\draw[shorten <= -10pt]
+  (aux3) --
+  (a) --
+  (aux1);
+\draw[opacity=0.6,titlepagecolor,shorten <= -10pt]
+  (b) --
+  ++(225:2.2) --
+  ++(-45:2.2);
+\end{scope}
+\draw[titlepagecolor,line width=8pt,rounded corners=8pt,shorten <= -10pt]
+  (aux4) --
+  ++(225:0.8) --
+  ++(-45:0.8);
+\begin{scope}[titlepagecolor!70,line width=6pt,rounded corners=8pt]
+\draw[shorten <= -10pt]
+  (aux2) --
+  ++(225:3) coordinate[pos=0.45] (c) --
+  ++(-45:3.1);
+\draw
+  (aux2) --
+  (c) --
+  ++(135:2.5) --
+  ++(45:2.5) --
+  ++(-45:2.5) coordinate[pos=0.3] (d);   
+\draw 
+  (d) -- +(45:1);
+\end{scope}
+\end{tikzpicture}%
+}
+
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+

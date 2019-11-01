@@ -1,0 +1,33 @@
+\documentclass[10pt, onecolumn]{book}
+\pdfoutput=1
+\include{packages}
+\author{%
+	\textbf{King's College London} \\
+	\emph{PhD Upgrade -- October 2019}\vspace{20pt} \\
+    \textbf{J.B.G. Alvey} \\
+    Theoretical Particle Physics and Cosmology \\
+    \texttt{james.alvey@kcl.ac.uk}\vspace{20pt} \\
+    \footnotesize{
+    \textbf{Panel:} Diego Blas, Chris McCabe, Jean Alexandre}
+}
+\pagestyle{plain}
+\begin{document}
+\renewcommand{\thepage}{}
+\include{title}
+\include{publications}
+{
+\hypersetup{linkcolor=black}
+\tableofcontents
+}
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+\include{intro}
+\include{bbn}
+\include{cosmicrays}
+\include{neutrinos}
+{
+\singlespacing
+\bibliography{biblio}
+}
+\include{appendix}
+\end{document}
